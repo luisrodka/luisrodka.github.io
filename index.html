@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Object Detection</h1>
-    <input type="file" id="imageInput">
-    <button onclick="uploadImage()">Upload and Detect</button>
-    <div id="result"></div>
+         <div style="margin: 1em;">
+        <!-- input file -->
 
-    <script src="script.js"></script>
+        <label id="upload" for="file-input" class="btn upload" style="margin-top: 1em;"> Upload Your Image </label>
+        <input id="file-input" type="file" accept="image/*">
+        <!-- detect -->
+        <button id="detect" class="btn detect hide"> Detect </button>
+        <!-- reload -->
+        <button id="reload" class="btn reload hide" onclick="reload()"> Reset ↻ </button>
+      </div>
+    </div>
+
+<div class="preview"> </div>
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+<script src="js/upload_handler.js"></script>
+<script src="js/status_checker.js"></script>
+<script src="script.js"></script>
+    
 </body>
 </html>
