@@ -39,41 +39,6 @@ function onload_func() {
   send_detect_show();
 }
 
-// example on click
-example_dog.addEventListener('click', function () {
-  event.preventDefault();
-  // clean the previous result
-  preview.innerHTML = '';
-  // resize the image, send to the server, and show to a user
-  img.onload = onload_func;
-  img.src = "../images/detector_examples/dog.jpg";
-});
-example_street.addEventListener('click', function () {
-  event.preventDefault();
-  // clean the previous result
-  preview.innerHTML = '';
-  // resize the image, send to the server, and show to a user
-  img.onload = onload_func;
-  img.src = "../images/detector_examples/street.jpg";
-});
-example_wedding.addEventListener('click', function () {
-  event.preventDefault();
-  // clean the previous result
-  preview.innerHTML = '';
-  // resize the image, send to the server, and show to a user
-  img.onload = onload_func;
-  img.src = "../images/detector_examples/wedding.jpg";
-});
-example_ngc1499.addEventListener('click', function () {
-  event.preventDefault();
-  // clean the previous result
-  preview.innerHTML = '';
-  // resize the image, send to the server, and show to a user
-  img.onload = onload_func;
-  img.src = "../images/detector_examples/NGC1499.jpg";
-});
-
-
 upload.addEventListener('change', function() {
   event.preventDefault();
   // clean the previous result
@@ -126,7 +91,7 @@ function send_detect_show() {
     // and show the reload button
     rld.classList.remove('hide');
   }).fail(function (data) {
-    alert("Wow! That's weird. It seems it didn't work for you, but it had to. Please let me know about this odd situation on vdyashin@gmail.com or in Issues on GitHub. Or reload the page and try again.");
+    alert("ERROR line 94");
     // remove the detect button
     detect.parentNode.removeChild(detect);
     // and show the reload button
