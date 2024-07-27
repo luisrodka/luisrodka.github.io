@@ -1,5 +1,5 @@
 // url to server with flask running
-var SERVER_URL = '';
+var SERVER_URL = 'luisrodka.github.io:5000/';
 
 // set max side length for an uploaded image
 var MAX_SIDE_LEN = 1280;
